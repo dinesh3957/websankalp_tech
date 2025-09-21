@@ -543,4 +543,198 @@ img {
     .vision-mission-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr; }
+    
+    /* Product Detail Mobile Styles */
+    .product-detail-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .detail-img {
+        max-height: 300px;
+    }
+    
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* ------------------- */
+/* 12. Product Detail Page Styles */
+/* ------------------- */
+
+.product-detail-section {
+    background-color: var(--secondary-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.product-detail-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.product-detail-image {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.detail-img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.product-detail-info {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.product-detail-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.product-brand {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.product-model {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.product-series {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.product-category-badge {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.product-detail-features,
+.product-detail-specifications {
+    margin-bottom: 2rem;
+}
+
+.product-detail-features h3,
+.product-detail-specifications h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    background: var(--secondary-color);
+    margin-bottom: 0.8rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.features-list li:hover {
+    transform: translateX(5px);
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.spec-item {
+    background: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.spec-item strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.product-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.product-actions .btn {
+    flex: 1;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Back button styling */
+#back-to-contact {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#back-to-contact:hover {
+    background: #0a2857;
+    transform: translateY(-2px);
 }

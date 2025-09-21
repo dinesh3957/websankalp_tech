@@ -442,9 +442,94 @@ document.addEventListener('DOMContentLoaded', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    // =================================================================================
+    // 4. PRODUCT DETAIL PAGE FUNCTIONALITY (for contact.html)
+    // =================================================================================
+    
+    const initializeProductDetailPage = () => {
+        // Get URL parameters to check if a product was clicked
+        const urlParams = new URLSearchParams(window.location.search);
+        const productModel = urlParams.get('product');
+        
+        if (productModel) {
+            // Find the product in the catalog
+            const product = productCatalog.find(p => p.model === productModel);
+            
+            if (product) {
+                showProductDetail(product);
+            }
+        }
+        
+        // Back to contact button functionality
+        const backBtn = document.getElementById('back-to-contact');
+        if (backBtn) {
+            backBtn.addEventListener('click', () => {
+                hideProductDetail();
+                // Remove product parameter from URL
+                const newUrl = window.location.pathname;
+                window.history.replaceState({}, document.title, newUrl);
+            });
+        }
+    };
+    
+    const showProductDetail = (product) => {
+        // Show product detail section
+        const productDetailSection = document.getElementById('product-detail-section');
+        const contactMainTitle = document.getElementById('contact-main-title');
+        
+        if (productDetailSection && contactMainTitle) {
+            // Update page title
+            contactMainTitle.textContent = `Product Details - ${product.model}`;
+            
+            // Show product detail section
+            productDetailSection.style.display = 'block';
+            
+            // Populate product details
+            document.getElementById('product-detail-img').src = product.image;
+            document.getElementById('product-detail-img').alt = product.model;
+            document.getElementById('product-detail-brand').textContent = product.brand;
+            document.getElementById('product-detail-model').textContent = product.model;
+            document.getElementById('product-detail-series').textContent = product.series;
+            document.getElementById('product-detail-category').textContent = product.category;
+            
+            // Populate specifications
+            document.getElementById('spec-brand').textContent = product.brand;
+            document.getElementById('spec-model').textContent = product.model;
+            document.getElementById('spec-series').textContent = product.series;
+            document.getElementById('spec-category').textContent = product.category;
+            document.getElementById('spec-subtype').textContent = product.subtype;
+            
+            // Populate features
+            const featuresList = document.getElementById('product-detail-features-list');
+            if (featuresList && product.features) {
+                featuresList.innerHTML = product.features.map(feature => 
+                    `<li>${feature}</li>`
+                ).join('');
+            }
+            
+            // Scroll to product detail section
+            productDetailSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+    
+    const hideProductDetail = () => {
+        const productDetailSection = document.getElementById('product-detail-section');
+        const contactMainTitle = document.getElementById('contact-main-title');
+        
+        if (productDetailSection && contactMainTitle) {
+            productDetailSection.style.display = 'none';
+            contactMainTitle.textContent = 'Get In Touch';
+        }
+    };
     
     // --- Run page-specific logic ---
     if (document.body.id === 'product-explorer-page') {
         initializeProductExplorer();
+    }
+    
+    // Initialize product detail functionality on contact page
+    if (window.location.pathname.includes('contact.html')) {
+        initializeProductDetailPage();
     }
 });

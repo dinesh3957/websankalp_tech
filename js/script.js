@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Dome Camera',
             model: 'FLEXIDOME IP',
             image: 'Images/Security/Camera/Bosch/flexdome.jpg',
-            features: ['HD Resolution', 'Wide Dynamic Range', 'Vandal Resistant', 'Smart Analytics']
+            features: ['HD Resolution', 'Wide Dynamic Range', 'Vandal Resistant', 'Smart Analytics'],
+            officialUrl: 'https://www.boschsecurity.com/'
         },
         {
             id: 'WS-CCTV-002',
@@ -25,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Network Camera',
             model: 'NBC Series',
             image: 'Images/Security/Camera/Bosch/netwokca.jpg',
-            features: ['Network Connectivity', 'High Resolution', 'Remote Access', 'Motion Detection']
+            features: ['Network Connectivity', 'High Resolution', 'Remote Access', 'Motion Detection'],
+            officialUrl: 'https://www.boschsecurity.com/'
         },
         {
             id: 'WS-CCTV-003',
@@ -35,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Box Camera',
             model: 'HBX-3300',
             image: 'Images/Security/Camera/Honeywell/boxcam.png',
-            features: ['3MP Resolution', 'Day/Night Vision', 'Flexible Mounting', 'Professional Grade']
+            features: ['3MP Resolution', 'Day/Night Vision', 'Flexible Mounting', 'Professional Grade'],
+            officialUrl: 'https://www.honeywellsecurity.com/'
         },
         {
             id: 'WS-CCTV-004',
@@ -45,7 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Micro Dome Camera',
             model: 'MicroDome HD',
             image: 'Images/Security/Camera/Honeywell/Microdome .png',
-            features: ['Compact Design', 'HD Quality', 'Easy Installation', 'Wide Coverage']
+            features: ['Compact Design', 'HD Quality', 'Easy Installation', 'Wide Coverage'],
+            officialUrl: 'https://www.honeywellsecurity.com/'
         },
         {
             id: 'WS-CCTV-005',
@@ -55,7 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Security Camera',
             model: 'Valkyrie 10K',
             image: 'Images/Security/Camera/Vicon/Valkyrie_Flat_Front_10K_V2.png',
-            features: ['10MP Resolution', 'Advanced Analytics', 'Weather Resistant', 'Professional Security']
+            features: ['10MP Resolution', 'Advanced Analytics', 'Weather Resistant', 'Professional Security'],
+            officialUrl: 'https://www.vicon-security.com/'
         },
         {
             id: 'WS-CCTV-006',
@@ -65,7 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'PTZ Camera',
             model: 'Vanguard PTZ',
             image: 'Images/Security/Camera/Vicon/Vanguard.png',
-            features: ['Pan-Tilt-Zoom', 'Auto Tracking', 'High Speed', 'Professional Control']
+            features: ['Pan-Tilt-Zoom', 'Auto Tracking', 'High Speed', 'Professional Control'],
+            officialUrl: 'https://www.vicon-security.com/'
         },
 
         // -- Access Control Products --
@@ -77,7 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Access Controller',
             model: 'ASI1201A',
             image: 'Images/Security/access control/Dahua/ASI1201A_ASI1201A-D_thumb.png',
-            features: ['RFID Access', 'Multi-User Support', 'Network Connectivity', 'Time Attendance']
+            features: ['RFID Access', 'Multi-User Support', 'Network Connectivity', 'Time Attendance'],
+            officialUrl: 'https://www.dahuasecurity.com/'
         },
         {
             id: 'WS-AC-002',
@@ -87,7 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Biometric Reader',
             model: 'ASI1212F-21',
             image: 'Images/Security/access control/Dahua/ASI1212F-21_thumb.png',
-            features: ['Fingerprint Recognition', 'High Accuracy', 'Fast Processing', 'Secure Access']
+            features: ['Fingerprint Recognition', 'High Accuracy', 'Fast Processing', 'Secure Access'],
+            officialUrl: 'https://www.dahuasecurity.com/'
         },
         {
             id: 'WS-AC-003',
@@ -97,7 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Time Attendance',
             model: 'ESSL-X628C',
             image: 'Images/Security/access control/essl/essl.png',
-            features: ['Face Recognition', 'Fingerprint Scanner', 'Card Reader', 'Cloud Connectivity']
+            features: ['Face Recognition', 'Fingerprint Scanner', 'Card Reader', 'Cloud Connectivity'],
+            officialUrl: 'https://www.esslsecurity.com/'
         },
 
         // -- Video Door Systems --
@@ -109,7 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Video Doorbell',
             model: 'VTO3211D-P',
             image: 'Images/Security/Video door/dahua/doorbell.png',
-            features: ['HD Video Call', 'Motion Detection', 'Night Vision', 'Mobile App']
+            features: ['HD Video Call', 'Motion Detection', 'Night Vision', 'Mobile App'],
+            officialUrl: 'https://www.dahuasecurity.com/'
         },
         {
             id: 'WS-VD-002',
@@ -119,7 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'IP Door Station',
             model: 'DS-KV6113-WPE1',
             image: 'Images/Security/Video door/Hikvision/hik1.png',
-            features: ['Weather Resistant', 'Two-Way Audio', 'Remote Unlock', 'High Definition']
+            features: ['Weather Resistant', 'Two-Way Audio', 'Remote Unlock', 'High Definition'],
+            officialUrl: 'https://www.hikvision.com/'
         },
 
         // -- Audio Solutions --
@@ -131,7 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Wireless Headphones',
             model: 'Rockerz 480',
             image: 'Images/Audio_Video/audio_solutions/headphones/boAt Rockerz 480 W_RGB .png',
-            features: ['RGB Lighting', 'Wireless Bluetooth', 'Long Battery Life', 'Bass Boost']
+            features: ['RGB Lighting', 'Wireless Bluetooth', 'Long Battery Life', 'Bass Boost'],
+            officialUrl: 'https://www.boat-lifestyle.com/'
         },
         {
             id: 'WS-AUD-002',
@@ -141,7 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Wireless Headphones',
             model: 'Tune 510BT',
             image: 'Images/Audio_Video/audio_solutions/headphones/JBL Tune 510BT, On Ear Wireless Headphones .png',
-            features: ['Pure Bass Sound', '40H Battery Life', 'Wireless Freedom', 'Hands-free Calls']
+            features: ['Pure Bass Sound', '40H Battery Life', 'Wireless Freedom', 'Hands-free Calls'],
+            officialUrl: 'https://in.jbl.com/'
         },
         {
             id: 'WS-AUD-003',
@@ -151,7 +164,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Headphones',
             model: 'Sony Professional',
             image: 'Images/Audio_Video/audio_solutions/headphones/SONY.png',
-            features: ['Studio Quality', 'Noise Cancellation', 'Premium Build', 'Professional Audio']
+            features: ['Studio Quality', 'Noise Cancellation', 'Premium Build', 'Professional Audio'],
+            officialUrl: 'https://www.sony.co.in/'
         },
         {
             id: 'WS-AUD-004',
@@ -161,7 +175,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Soundbar',
             model: 'Cinema SB580',
             image: 'Images/Audio_Video/audio_solutions/soundbars/JBL Cinema SB580 440W Bluetooth Soundbar.png',
-            features: ['440W Power', 'Bluetooth Connectivity', 'Cinema Experience', 'Wireless Subwoofer']
+            features: ['440W Power', 'Bluetooth Connectivity', 'Cinema Experience', 'Wireless Subwoofer'],
+            officialUrl: 'https://in.jbl.com/'
         },
         {
             id: 'WS-AUD-005',
@@ -171,7 +186,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Party Speaker',
             model: 'ULT TOWER 10',
             image: 'Images/Audio_Video/audio_solutions/speakers/Sony ULT TOWER 10 Party Speaker.png',
-            features: ['High Power Output', 'Party Lighting', 'Wireless Connectivity', 'Deep Bass']
+            features: ['High Power Output', 'Party Lighting', 'Wireless Connectivity', 'Deep Bass'],
+            officialUrl: 'https://www.sony.co.in/'
         },
 
         // -- Camera Equipment --
@@ -183,7 +199,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'DSLR Camera',
             model: 'EOS 750D',
             image: 'Images/Audio_Video/hardware/cameras/Canon/Canon EOS 750D.png',
-            features: ['24.2MP Sensor', 'Wi-Fi Enabled', 'Full HD Video', 'Articulating LCD']
+            features: ['24.2MP Sensor', 'Wi-Fi Enabled', 'Full HD Video', 'Articulating LCD'],
+            officialUrl: 'https://www.canon.co.in/'
         },
         {
             id: 'WS-CAM-002',
@@ -193,7 +210,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Digital Camera',
             model: 'PowerShot SX740 HS',
             image: 'Images/Audio_Video/hardware/cameras/Canon/PowerShot SX740 HS.png',
-            features: ['40x Optical Zoom', '4K Video', 'Wi-Fi/Bluetooth', 'Compact Design']
+            features: ['40x Optical Zoom', '4K Video', 'Wi-Fi/Bluetooth', 'Compact Design'],
+            officialUrl: 'https://www.canon.co.in/'
         },
         {
             id: 'WS-CAM-003',
@@ -203,7 +221,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Mirrorless Camera',
             model: 'Z 6III Body',
             image: 'Images/Audio_Video/hardware/cameras/Nikon/Nikon Digital Camera Z 6III Body with NIKKOR .png',
-            features: ['Full Frame Sensor', 'NIKKOR Lens', '4K Video', 'Professional Grade']
+            features: ['Full Frame Sensor', 'NIKKOR Lens', '4K Video', 'Professional Grade'],
+            officialUrl: 'https://www.nikon.co.in/'
         },
         {
             id: 'WS-CAM-004',
@@ -213,7 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Mirrorless Camera',
             model: 'ILCE-1',
             image: 'Images/Audio_Video/hardware/cameras/Sony/ILCE-1.png',
-            features: ['50MP Full Frame', '8K Video Recording', 'Real-time Eye AF', 'Professional Features']
+            features: ['50MP Full Frame', '8K Video Recording', 'Real-time Eye AF', 'Professional Features'],
+            officialUrl: 'https://www.sony.co.in/'
         },
 
         // -- Projector Solutions --
@@ -225,7 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Smart Projector',
             model: 'Beem 500',
             image: 'Images/Audio_Video/projectors/dlp/Portronics Beem 500 Smart Projector.png',
-            features: ['Smart Android OS', 'HD Resolution', 'Portable Design', 'Wireless Connectivity']
+            features: ['Smart Android OS', 'HD Resolution', 'Portable Design', 'Wireless Connectivity'],
+            officialUrl: 'https://www.portronics.com/'
         },
         {
             id: 'WS-PROJ-002',
@@ -235,7 +256,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'DLP Projector',
             model: 'PA503S',
             image: 'Images/Audio_Video/projectors/dlp/ViewSonic PA503S DLP Projector.png',
-            features: ['DLP Technology', 'High Brightness', 'Long Lamp Life', 'Business Ready']
+            features: ['DLP Technology', 'High Brightness', 'Long Lamp Life', 'Business Ready'],
+            officialUrl: 'https://www.viewsonic.com/'
         },
         {
             id: 'WS-PROJ-003',
@@ -245,7 +267,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Smart Projector',
             model: 'XGIMI Smart',
             image: 'Images/Audio_Video/projectors/dlp/XGIMI.png',
-            features: ['4K Resolution', 'Smart OS', 'Auto Focus', 'Premium Audio']
+            features: ['4K Resolution', 'Smart OS', 'Auto Focus', 'Premium Audio'],
+            officialUrl: 'https://www.xgimi.com/'
         },
         {
             id: 'WS-PROJ-004',
@@ -255,7 +278,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: '3LCD Projector',
             model: 'Epson 2165W WXGA',
             image: 'Images/Audio_Video/projectors/lcd/Epson 2165W WXGA 3LCD Projector.png',
-            features: ['3LCD Technology', 'WXGA Resolution', 'High Color Brightness', 'Reliable Performance']
+            features: ['3LCD Technology', 'WXGA Resolution', 'High Color Brightness', 'Reliable Performance'],
+            officialUrl: 'https://www.epson.co.in/'
         },
 
         // -- POS Systems Products --
@@ -267,7 +291,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Billing Software',
             model: 'WS-RetailMax-Cloud',
             image: 'Images/Point of Sales/posiflex-pos-system.jpg',
-            features: ['Cloud-Based', 'Inventory Management', 'GST Ready', 'CRM Included']
+            features: ['Cloud-Based', 'Inventory Management', 'GST Ready', 'CRM Included'],
+            officialUrl: 'https://websankalp.in/'
         },
 
         // -- Industrial IoT Products --
@@ -279,7 +304,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'IoT Platform',
             model: 'WS-IoT-Pro',
             image: 'Images/Industrial IoT Home Page/iot.jpg',
-            features: ['Sensor Integration', 'Real-time Analytics', 'Cloud Platform', 'Dashboard Monitoring']
+            features: ['Sensor Integration', 'Real-time Analytics', 'Cloud Platform', 'Dashboard Monitoring'],
+            officialUrl: 'https://websankalp.in/'
         },
 
         // -- Industrial Touch PC --
@@ -291,7 +317,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Touch Panel PC',
             model: 'WS-TouchPC-Pro',
             image: 'Images/Industrial Touch PC/download.jpeg',
-            features: ['Industrial Grade', 'Multi-touch Display', 'Rugged Design', 'Extended Temperature']
+            features: ['Industrial Grade', 'Multi-touch Display', 'Rugged Design', 'Extended Temperature'],
+            officialUrl: 'https://websankalp.in/'
         },
 
         // -- Battery Packs --
@@ -303,7 +330,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Li-Ion Battery',
             model: 'WS-Battery-LFP',
             image: 'Images/Renewable Li-Ion & LFP Battery/download (1).jpeg',
-            features: ['LiFePO4 Technology', 'Long Cycle Life', 'Fast Charging', 'Safety Features']
+            features: ['LiFePO4 Technology', 'Long Cycle Life', 'Fast Charging', 'Safety Features'],
+            officialUrl: 'https://websankalp.in/'
         },
 
         // -- Custom Software Products --
@@ -315,7 +343,8 @@ document.addEventListener('DOMContentLoaded', () => {
             subtype: 'Custom Software',
             model: 'WS-CustomDev-Pro',
             image: 'Images/Custom Software Solutions Home Page/cust_software_dev.jpg',
-            features: ['Custom Development', 'Scalable Solutions', 'Modern Architecture', 'Full Support']
+            features: ['Custom Development', 'Scalable Solutions', 'Modern Architecture', 'Full Support'],
+            officialUrl: 'https://websankalp.in/'
         }
     ];
 
@@ -522,6 +551,81 @@ document.addEventListener('DOMContentLoaded', () => {
             contactMainTitle.textContent = 'Get In Touch';
         }
     };
+
+    // --- Go Official Popup Functionality ---
+    const initializeGoOfficialPopup = () => {
+        const goOfficialBtn = document.getElementById('go-official-btn');
+        const popupModal = document.getElementById('official-popup-modal');
+        const popupClose = document.querySelector('.popup-close');
+        const popupForm = document.getElementById('official-popup-form');
+        
+        if (goOfficialBtn && popupModal) {
+            // Show popup when Go Official button is clicked
+            goOfficialBtn.addEventListener('click', () => {
+                popupModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            });
+            
+            // Close popup when X button is clicked
+            if (popupClose) {
+                popupClose.addEventListener('click', () => {
+                    popupModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                });
+            }
+            
+            // Close popup when clicking outside
+            popupModal.addEventListener('click', (e) => {
+                if (e.target === popupModal) {
+                    popupModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Handle form submission
+            if (popupForm) {
+                popupForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = {
+                        name: document.getElementById('popup-name').value,
+                        phone: document.getElementById('popup-phone').value,
+                        email: document.getElementById('popup-email').value,
+                        message: document.getElementById('popup-message').value
+                    };
+                    
+                    // Get current product info
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const productModel = urlParams.get('product');
+                    const product = productCatalog.find(p => p.model === productModel);
+                    
+                    if (product && product.officialUrl) {
+                        // Show success message
+                        alert(`Thank you ${formData.name}! Your inquiry about ${product.brand} ${product.model} has been submitted. Redirecting to official website...`);
+                        
+                        // Close popup
+                        popupModal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                        
+                        // Clear form
+                        popupForm.reset();
+                        
+                        // Redirect to official website
+                        setTimeout(() => {
+                            window.open(product.officialUrl, '_blank');
+                        }, 1500);
+                    } else {
+                        // Fallback if no official URL found
+                        alert(`Thank you ${formData.name}! Your inquiry has been submitted successfully.`);
+                        popupModal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                        popupForm.reset();
+                    }
+                });
+            }
+        }
+    };
     
     // --- Run page-specific logic ---
     if (document.body.id === 'product-explorer-page') {
@@ -531,5 +635,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize product detail functionality on contact page
     if (window.location.pathname.includes('contact.html')) {
         initializeProductDetailPage();
+        initializeGoOfficialPopup(); // Initialize popup functionality
     }
 });

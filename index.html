@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebSankalp Technologies - Home</title>
     <meta name="description" content="WebSankalp Technologies believes in Digitalizing the Process to Enhance Productivity. We offer solutions in asset tracking, POS, security, and more.">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +26,18 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-contact">
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <a href="tel:+919326825895">+91 9326825895</a>
+                    <small>Get in touch with us</small>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <a href="mailto:info@websankalp.com">info@websankalp.com</a>
+                    <small>Send us an e-mail</small>
+                </div>
+            </div>
             <button class="menu-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -34,14 +47,52 @@
     </header>
 <!-- navbar -->
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1>WebSankalp Technologies</h1>
-                <p class="tagline">“We believe in Digitalizing the Process to Enhance Productivity”</p>
-                <a href="products.html" class="btn btn-primary">Explore Solutions</a>
-            </div>
-        </section>
+        
+        <!-- ---------------------------------------Slider --------------------------------------------------->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+         <!-- image 1--> <img src="assets/slider/slider1.jpg" class="d-block w-100" alt="WebSankalp Technologies - Digital Solutions">
+          <div class="carousel-caption d-none d-md-block">
+        
+          </div>
+        </div>
+        <div class="carousel-item">
+         <!-- image 2--> <img src="assets/slider/slider2.jpg" class="d-block w-100" alt="Innovative Technology Solutions">
+          <div class="carousel-caption d-none d-md-block">
+        
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- image 3--><img src="assets/slider/slider3.jpg" class="d-block w-100" alt="Advanced Security Systems">
+          <div class="carousel-caption d-none d-md-block">
+           
+          </div>
+        </div>
+        <div class="carousel-item">
+        <!-- image 4-->  <img src="assets/slider/slider4.jpg" class="d-block w-100" alt="Industrial IoT Solutions">
+          <div class="carousel-caption d-none d-md-block">
+           
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
+<!-- ------------------------------------------------slider ----------------------------------------------------->
         <section id="about-preview" class="section-padding">
             <div class="container text-center">
                 <h2 class="section-title">Innovating for a Digital Future</h2>
@@ -146,8 +197,18 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <h4>WebSankalp Technologies</h4>
-                    <p>Digitalizing processes to enhance productivity. We provide innovative solutions to power your business growth.</p>
+                    <h4><span class="red-letter">W</span>ebSankalp <span class="red-letter">T</span>echnologies</h4>
+                      <div class="profile-section">
+                        <img src="assets/satish sir image/satish_sir.jpg" alt="CEO Profile" class="profile-img">
+                        <div class="profile-info">
+                            <h5>Satish Sutar </h5>
+                            <span>CEO & Founder - WST</span>
+                        </div>
+                    </div>
+                    <p>WebSankalp Technologies believes in Digitalizing the Process to enhance Productivity.
+
+We focus to build customize software application in the field of iOT, AIDC, POS and other relative technology domain areas.</p>
+                  
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
@@ -183,5 +244,8 @@
     </button>
 
     <script src="js/script.js" defer></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>

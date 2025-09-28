@@ -450,10 +450,38 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Mobile Navigation Toggle ---
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNav = document.querySelector('.main-nav');
+    
     if (menuToggle && mainNav) {
-        menuToggle.addEventListener('click', () => {
+        // Toggle menu on hamburger click
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
             mainNav.classList.toggle('active');
             menuToggle.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mainNav.contains(e.target) && !menuToggle.contains(e.target)) {
+                mainNav.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+        
+        // Close menu when clicking on nav links
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+        
+        // Close menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
         });
     }
 

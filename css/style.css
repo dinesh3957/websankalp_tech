@@ -3,6 +3,13 @@
 /* ------------------- */
 /* 1. Global Variables & Styles */
 /* ------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Apply Open Sans font to everything */
+* {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
 :root {
     --primary-color: #0a1f44; /* Navy Blue */
     --secondary-color: #f0f2f5; /* Light Gray */
@@ -11,7 +18,7 @@
     --light-text-color: #ffffff;
     --border-color: #dddddd;
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    --font-family: 'Poppins', sans-serif;
+    --font-family: 'Open Sans', sans-serif;
 }
 
 *, *::before, *::after {
@@ -25,7 +32,7 @@ html {
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: 'Open Sans', sans-serif !important;
     color: var(--text-color);
     line-height: 1.6;
     background-color: var(--light-text-color);

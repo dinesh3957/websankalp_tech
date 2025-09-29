@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- navbar -->
@@ -34,7 +34,7 @@
                 </div>
                 <div class="contact-item">
                     <span class="contact-icon">✉️</span>
-                    <a href="mailto:info@websankalp.com">info@websankalp.com</a>
+                    <a href="mailto:info@websankalp.com?subject=Inquiry from WebSankalp Website" target="_self">info@websankalp.com</a>
                     <small>Send us an e-mail</small>
                 </div>
             </div>
@@ -49,7 +49,7 @@
     <main>
         
         <!-- ---------------------------------------Slider --------------------------------------------------->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -101,59 +101,53 @@
             </div>
         </section>
 
+
+
+
+ <!-- ------------------------------------------------Products----------------------------------------------------->  
         <section id="product-categories" class="section-padding bg-light">
             <div class="container">
                 <h2 class="section-title text-center">Our Product Categories</h2>
-                <div class="product-grid">
-                    <div class="card">
-                        <img src="assets/images/cctv-security-surveillance-system.jpg" alt="Barcode & RFID" class="card-img">
+                <div class="product-grid" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px;">
+                    <!-- First Row - 6 Products -->
+
+                    <div class="card" style="grid-column: span 1;">
+                        <img src="assets/images/barcode.png" alt="Barcode & RFID" class="card-img" style="width: 100%; height: auto; max-width: 150px; object-fit: contain; display: block; margin: 0 auto;">
                         <div class="card-content">
-                            <h3>Security & Surveillance Solutions</h3>
+                            <h3>Barcode & RFID</h3>
                             <p>Advanced solutions for asset tracking, inventory management, and data capture.</p>
                             <a href="products.html#barcode" class="card-link">View Details</a>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/images/av1.jpg" alt="POS Systems" class="card-img">
-                        <div class="card-content">
-                            <h3>AV Solutions</h3>
-                            <p>Streamline your retail operations with our robust and intuitive POS systems.</p>
-                            <a href="products.html#pos" class="card-link">View Details</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/barcode-scanner-500x500.jpg" alt="CCTV & Security" class="card-img">
-                        <div class="card-content">
-                            <h3>Barcode & RFID</h3>
-                            <p>Secure your premises with high-definition surveillance and access control systems.</p>
-                            <a href="products.html#security" class="card-link">View Details</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/posiflex-pos-system.jpg" alt="Video Conferencing" class="card-img">
+
+                    <div class="card" style="grid-column: span 1;">
+                        <img src="assets/images/posiflex-pos-system.jpg" alt="Point of Sales" class="card-img">
                         <div class="card-content">
                             <h3>Point of Sales (POS)</h3>
                             <p>Connect and collaborate seamlessly with our reliable conferencing solutions.</p>
-                            <a href="products.html#video" class="card-link">View Details</a>
+                            <a href="products.html#pos" class="card-link">View Details</a>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/images/download.jpeg" alt="Digital Signage" class="card-img">
+
+                    <div class="card" style="grid-column: span 1;">
+                        <img src="assets/images/download.jpeg" alt="Industrial Touch PC" class="card-img">
                         <div class="card-content">
                             <h3>Industrial Touch PC (IPC)</h3>
                             <p>Engage your audience with dynamic displays and real-time content management.</p>
-                            <a href="products.html#signage" class="card-link">View Details</a>
+                            <a href="products.html#ipc" class="card-link">View Details</a>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/images/download (1).jpeg" alt="Battery Packs" class="card-img">
+
+                    <div class="card" style="grid-column: span 1;">
+                        <img src="assets/images/self service.png" alt="Security & Surveillance" class="card-img">
                         <div class="card-content">
-                            <h3>Renewable Li-lon & LFP Battery Packs</h3>
-                            <p>Powering innovation with custom battery solutions for various industries.</p>
-                            <a href="products.html#battery" class="card-link">View Details</a>
+                            <h3>Self Service Kiosks </h3>
+                            <p>Smart solutions for ordering, payments, and customer self-service.</p>
+                            <a href="products.html#security" class="card-link">View Details</a>
                         </div>
                     </div>
-                     <div class="card">
+
+                    <div class="card" style="grid-column: span 1;">
                         <img src="assets/images/iot.jpg" alt="Industrial IoT" class="card-img">
                         <div class="card-content">
                             <h3>Industrial IOT</h3>
@@ -161,7 +155,8 @@
                             <a href="products.html#iot" class="card-link">View Details</a>
                         </div>
                     </div>
-                     <div class="card">
+
+                    <div class="card" style="grid-column: span 1;">
                         <img src="assets/images/cust_software_dev.jpg" alt="Custom Software" class="card-img">
                         <div class="card-content">
                             <h3>Custom Software Solutions</h3>
@@ -169,9 +164,160 @@
                             <a href="products.html#software" class="card-link">View Details</a>
                         </div>
                     </div>
+
+  <!-- Second Row - 6 Products -->
+
+
+                    <div class="card" style="grid-column: span 1;">
+                        <img src="assets/images/cctv-security-surveillance-system.jpg" alt="Security & Surveillance" class="card-img">
+                        <div class="card-content">
+                            <h3>Security & Surveillance Solutions</h3>
+                            <p>Advanced solutions for asset tracking, inventory management, and data capture.</p>
+                            <a href="products.html#security" class="card-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card" style="grid-column: span 1;">
+                        <img src="assets/images/acess control.png" alt="AV Solutions" class="card-img">
+                        <div class="card-content">
+                            <h3>Access Control</h3>
+                            <p>Secure and efficient solutions for identity verification, entry management, and facility safety.</p>
+                            <a href="products.html#av" class="card-link">View Details</a>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="grid-column: span 1;">
+                        <img src="assets/images/conference.png" alt="Barcode & RFID" class="card-img" style="width: 100%; height: auto; max-width: 150px; object-fit: contain; display: block; margin: 0 auto;">
+                        <div class="card-content">
+                            <h3>Video Conferencing</h3>
+                            <p>Smart solutions for virtual meetings, presentations, and team collaboration.</p>
+                            <a href="products.html#barcode" class="card-link">View Details</a>
+                        </div>
+                    </div>
+                   
+
+                    <div class="card" style="grid-column: span 1;">
+                        <img src="assets/images/led.png" alt="led" class="card-img">
+                        <div class="card-content">
+                            <h3>Interactive LED Screens</h3>
+                            <p>Engaging solutions for teaching, training, and corporate presentations.</p>
+                            <a href="products.html#led" class="card-link">View Details</a>
+                        </div>
+                    </div>
+                    
+                     <div class="card" style="grid-column: span 1;">
+                        <img src="assets/images/battry.png" alt="battery" class="card-img">
+                        <div class="card-content">
+                            <h3>Battery PacksLi-Ion & LFP  Battery Packse</h3>
+                            <p>Reliable Li-Ion & LFP solutions for energy storage and power backup..</p>
+                            <a href="products.html#battary" class="card-link">View Details</a>
+                        </div>
+                    </div>                 
+                 
+
+                    <div class="card" style="grid-column: span 1;">
+                        <img src="assets/images/digital display.png" alt="Access Control" class="card-img">
+                        <div class="card-content">
+                            <h3>Digital Display Signages</h3>
+                            <p>High-visibility displays designed for both indoor and outdoor applications.</p>
+                            <a href="products.html#access" class="card-link">View Details</a>
+                        </div>
+                    </div>
+
+                   
+                  
                 </div>
+                
+                <style>
+                    .product-grid {
+                        display: grid !important;
+                        grid-template-columns: repeat(6, 1fr) !important;
+                        gap: 20px !important;
+                    }
+                    
+                    .product-grid .card {
+                        height: 280px !important;
+                        display: flex !important;
+                        flex-direction: column !important;
+                    }
+                    
+                    .product-grid .card-img {
+                        height: 120px !important;
+                        object-fit: cover !important;
+                        flex-shrink: 0 !important;
+                    }
+                    
+                    .product-grid .card-content {
+                        padding: 10px !important;
+                        flex: 1 !important;
+                        display: flex !important;
+                        flex-direction: column !important;
+                        justify-content: space-between !important;
+                    }
+                    
+                    .product-grid .card-content h3 {
+                        font-size: 0.9rem !important;
+                        margin-bottom: 5px !important;
+                        line-height: 1.2 !important;
+                    }
+                    
+                    .product-grid .card-content p {
+                        font-size: 0.75rem !important;
+                        margin-bottom: 8px !important;
+                        line-height: 1.3 !important;
+                        flex: 1 !important;
+                    }
+                    
+                    .product-grid .card-link {
+                        font-size: 0.8rem !important;
+                        margin-top: auto !important;
+                    }
+                    
+                    @media (max-width: 1200px) {
+                        .product-grid {
+                            grid-template-columns: repeat(4, 1fr) !important;
+                        }
+                        .card {
+                            grid-column: span 1 !important;
+                        }
+                    }
+                    
+                    @media (max-width: 768px) {
+                        .product-grid {
+                            grid-template-columns: repeat(3, 1fr) !important;
+                            gap: 15px !important;
+                        }
+                        .product-grid .card {
+                            height: 250px !important;
+                            grid-column: span 1 !important;
+                        }
+                        .product-grid .card-img {
+                            height: 100px !important;
+                        }
+                        .card-content h3 {
+                            font-size: 0.8rem !important;
+                        }
+                        .card-content p {
+                            font-size: 0.7rem !important;
+                        }
+                    }
+                    
+                    @media (max-width: 480px) {
+                        .product-grid {
+                            grid-template-columns: repeat(2, 1fr) !important;
+                            gap: 10px !important;
+                        }
+                        .product-grid .card {
+                            height: 220px !important;
+                        }
+                        .product-grid .card-img {
+                            height: 80px !important;
+                        }
+                    }
+                </style>
             </div>
         </section>
+      <!-- ------------------------------------------------Products----------------------------------------------------->  
 
         <section id="vision-mission" class="section-padding">
             <div class="container">
@@ -197,18 +343,16 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <h4><span class="red-letter">W</span>ebSankalp <span class="red-letter">T</span>echnologies</h4>
+                    <strong><h4><span class="red-letter">W</span>ebSankalp <span class="red-letter">T</span>echnologies</h4></strong>
+                    
                       <div class="profile-section">
-                        <img src="assets/satish sir image/satish_sir.jpg" alt="CEO Profile" class="profile-img">
-                        <div class="profile-info">
-                            <h5>Satish Sutar </h5>
-                            <span>CEO & Founder - WST</span>
+                       
+                        <div class="profile-info" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                             <img src="assets/satish sir image/satish_sir.jpg" alt="CEO Profile" class="profile-img" style="margin: 0 auto 10px auto;">
+                            <h5 style="margin: 5px 0; text-align: center;">Satish Sutar </h5>
+                            <span style="text-align: center;">CEO & Founder - WST</span>
                         </div>
                     </div>
-                    <p>WebSankalp Technologies believes in Digitalizing the Process to enhance Productivity.
-
-We focus to build customize software application in the field of iOT, AIDC, POS and other relative technology domain areas.</p>
-                  
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
@@ -227,9 +371,15 @@ We focus to build customize software application in the field of iOT, AIDC, POS 
                     </p>
                     <p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/></svg>
-                        info@websankalp.com
+                        <a href="mailto:info@websankalp.com?subject=Inquiry from WebSankalp Website" target="_self">info@websankalp.com</a>
                     </p>
+                    
+                    <div class="qr-code-section" style="margin-top: 20px; text-align: center;">
+                        <img src="assets/satish sir image/scanner.png" alt="WebSankalp QR Code" style="width: 120px; height: 120px; border: 2px solid #ddd; border-radius: 8px; background: white; padding: 8px;">
+                        <p style="font-size: 0.85rem; margin-top: 8px; color: #666;">Scan QR Code </p>
+                    </div>
                 </div>
+              
             </div>
             <div class="footer-bottom">
                 <p>© 2025 WebSankalp Technologies. All Rights Reserved.</p>

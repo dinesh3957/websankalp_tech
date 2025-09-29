@@ -665,4 +665,36 @@ document.addEventListener('DOMContentLoaded', () => {
         initializeProductDetailPage();
         initializeGoOfficialPopup(); // Initialize popup functionality
     }
+
+    // =================================================================================
+    // MAILTO LINK FUNCTIONALITY
+    // =================================================================================
+    
+    // Ensure mailto links work properly
+    function initializeMailtoLinks() {
+        const mailtoLinks = document.querySelectorAll('a[href^="mailto:"]');
+        
+        mailtoLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Don't prevent default - let the browser handle mailto
+                const href = this.getAttribute('href');
+                
+                // For debugging - you can remove this console.log later
+                console.log('Mailto link clicked:', href);
+                
+                // Ensure the link opens in the same window/tab
+                this.setAttribute('target', '_self');
+                
+                // Try to trigger the mailto programmatically as backup
+                try {
+                    window.location.href = href;
+                } catch (error) {
+                    console.log('Mailto fallback triggered');
+                }
+            });
+        });
+    }
+    
+    // Initialize mailto functionality
+    initializeMailtoLinks();
 });
